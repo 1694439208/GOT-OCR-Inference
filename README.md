@@ -5,6 +5,12 @@
 - [GOT-OCR2.0](https://github.com/Ucas-HaoranWei/GOT-OCR2.0)
 - [llama-cpp-python]([https://github.com/Ucas-HaoranWei/GOT-OCR2.0](https://github.com/abetlen/llama-cpp-python))
 ```
+代码里直接使用
+<|im_start|>system
+You should follow the instructions carefully and explain your answers in detail.<|im_end|><|im_start|>user
+<img></img>
+OCR: <|im_end|><|im_start|>assistant提示词是为了测试代码是否正常，主要是为了测试嵌入向量
+
 pip install llama-cpp-python
 研究GOT-OCR2.0落地加速，经过查询llama-cpp-python和llama的源码demo和issues，暂时实现了可能的推理，因为他官方就没说过也没找到如何嵌入自定义向量
 
