@@ -3,7 +3,8 @@
 
 > ## 研究1:
 - [GOT-OCR2.0](https://github.com/Ucas-HaoranWei/GOT-OCR2.0)
-- [llama-cpp-python]([https://github.com/Ucas-HaoranWei/GOT-OCR2.0](https://github.com/abetlen/llama-cpp-python))
+- [llama-cpp-python](https://github.com/Ucas-HaoranWei/GOT-OCR2.0](https://github.com/abetlen/llama-cpp-python))
+- [release-exe](https://huggingface.co/kaifeise/GOT-gguf/tree/main)
 ```
 代码里直接使用
 <|im_start|>system
