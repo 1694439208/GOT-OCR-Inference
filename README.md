@@ -3,7 +3,14 @@
 
 > ## 研究1:
 - [GOT-OCR2.0](https://github.com/Ucas-HaoranWei/GOT-OCR2.0)
-- [llama-cpp-python]([https://github.com/Ucas-HaoranWei/GOT-OCR2.0](https://github.com/abetlen/llama-cpp-python))
+- [llama-cpp-python](https://github.com/Ucas-HaoranWei/GOT-OCR2.0](https://github.com/abetlen/llama-cpp-python))
+- [release-exe](https://huggingface.co/kaifeise/GOT-gguf/tree/main)
+
+> ## release
+- 基础sdk包： https://pan.baidu.com/s/10Lo-yY_ZNW7gs0Gd9hiaMw 提取码: ie4n
+- 更新包: https://pan.baidu.com/s/13ySPo45kj_kDzK4P9O5fOQ 提取码: v4gd
+- 下载基础sdk包解压，然后下载更新包覆盖解压，然后  **双击启动.bat** 启动
+
 ```
 代码里直接使用
 <|im_start|>system
