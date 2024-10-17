@@ -8,7 +8,7 @@
 
 > ## release
 - 基础sdk包： https://pan.baidu.com/s/10Lo-yY_ZNW7gs0Gd9hiaMw 提取码: ie4n
-- 更新包: https://pan.baidu.com/s/13ySPo45kj_kDzK4P9O5fOQ 提取码: v4gd
+- 更新包: https://pan.baidu.com/s/1pw2JRQZjBZYo4UU-7UNuhQ 提取码: 5x3d
 - 下载基础sdk包解压，然后下载更新包覆盖解压，然后  **双击启动.bat** 启动
 
 ```
