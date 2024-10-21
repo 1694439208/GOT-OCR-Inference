@@ -1,5 +1,5 @@
 import ctypes
-from llama_cpp import Llama
+from llama_cpp import Llama, StoppingCriteriaList
 import llama_cpp
 import llama_cpp.llava_cpp as llava_cpp
 import llama_cpp.llava_cpp
@@ -42,13 +42,23 @@ with llama_cpp.suppress_stdout_stderr(disable=True):
     )
     print(f"aa:{aa},n_past_p:{n_past.value}")
 # Required to avoid issues with hf tokenizer
-llm.input_ids[llm.n_tokens : n_past.value] = -1
+# llm.input_ids[llm.n_tokens : n_past.value] = -1
 llm.n_tokens = n_past.value
 # Get prompt tokens to avoid a cache miss
 prompt = llm.input_ids[: llm.n_tokens].tolist()
 
+token_ids = {
+        # add the end of text token
+        llm.detokenize([llm._token_eos]),
+        int(151645),
+    }
 
-for token in llm.generate(prompt):
+def stop_on_token_ids(tokens, *args, **kwargs):
+    return tokens[-1] in token_ids
+
+stopping_criteria = StoppingCriteriaList([stop_on_token_ids])
+
+for token in llm.generate(prompt, stopping_criteria=stopping_criteria):
     print(llm.detokenize([token]).decode(errors="ignore"),end="")
 
 """output = llm(
